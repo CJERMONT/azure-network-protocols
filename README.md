@@ -81,5 +81,15 @@ You will immediately see background traffic such as DNS and ARP.
 
 ### **Ping the Linux VM from Windows**
 
-1. Open **Command Prompt**.
-2. Type:  
+<p align="center">
+  <img src="Testconnection.png" alt="Ping and Wireshark Screenshot" width="80%">
+</p>
+
+1. Open **Command Prompt** on the Windows VM.  
+2. Type the following command, replacing `<Linux-VM-private-IP>` with your Linux VM’s private IP address:
+3. Press **Enter** to start the ping test.  
+4. You should see replies like:
+This means the two VMs can communicate successfully.  
+5. In **Wireshark**, you’ll see matching **ICMP request and reply packets** appear in real time.
+
+✅ **Tip:** If you block ICMP in your Network Security Group (NSG), the ping will fail and Wireshark will show “Destination unreachable” messages — a great way to confirm your NSG rules are working.
