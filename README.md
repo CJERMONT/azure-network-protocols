@@ -86,7 +86,8 @@ You will immediately see background traffic such as DNS and ARP.
 </p>
 
 1. Open **Command Prompt** on the Windows VM.  
-2. Type the following command, replacing `<Linux-VM-private-IP>` with your Linux VM’s private IP address:
+2. Type the following command Type `ping <Linux-VM-private-IP>` and press Enter.
+, replacing `<Linux-VM-private-IP>` with your Linux VM’s private IP address:
 3. Press **Enter** to start the ping test.  
 4. You should see replies like:
 This means the two VMs can communicate successfully.  
