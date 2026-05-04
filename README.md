@@ -44,7 +44,7 @@ You will create:
 - **Ubuntu VM** (for testing SSH and ping)
 
 <p align="center">
-  <img src="ADD-YOUR-SCREENSHOT-HERE" alt="Azure VM Creation Screenshot" width="80%">
+  <img src="virtual machins in azure.png" alt="Azure VM Creation Screenshot" width="80%">
 </p>
 
 Make sure both VMs are in the **same virtual network** so they can communicate.
