@@ -9,12 +9,6 @@ This guide shows you how to watch network traffic between Azure Virtual Machines
 
 ---
 
-## 📺 Video Demonstration
-- **YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups**  
-  *(Insert your link here)*
-
----
-
 ## 🧰 Tools and Technologies Used
 - Microsoft Azure (Virtual Machines)
 - Remote Desktop (RDP)
