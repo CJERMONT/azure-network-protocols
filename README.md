@@ -47,7 +47,6 @@ You will create:
 <p align="center">
   <img src="virtual machins in azure.png" alt="Azure VM Creation Screenshot" width="80%">
 </p>
-
 ---
 
 # 🟩 Part 2 — Observe ICMP (Ping) Traffic
