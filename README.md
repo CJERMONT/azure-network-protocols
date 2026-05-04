@@ -72,7 +72,7 @@ Make sure both VMs are in the **same virtual network** so they can communicate.
 You will immediately see background traffic such as DNS and ARP.
 
 <p align="center">
-  <img src="ADD-YOUR-SCREENSHOT-HERE" alt="Wireshark Capture Screenshot" width="80%">
+  <img src="Traffic in wireshark.png" alt="Wireshark Capture Screenshot" width="80%">
 </p>
 
 ---
