@@ -58,7 +58,7 @@ Make sure both VMs are in the **same virtual network** so they can communicate.
 3. Install it with default settings.
 
 <p align="center">
-  <img src="ADD-YOUR-SCREENSHOT-HERE" alt="Wireshark Installation Screenshot" width="80%">
+  <img src="windows VM wireshark.png" alt="Wireshark Installation Screenshot" width="80%">
 </p>
 
 ---
