@@ -40,4 +40,51 @@ This guide shows you how to watch network traffic between Azure Virtual Machines
 ## **1. Create Two Virtual Machines in Azure**
 
 You will create:
-- **Windows 10 VM** (for Wiresh
+- **Windows 10 VM** (for Wireshark)
+- **Ubuntu VM** (for testing SSH and ping)
+
+<p align="center">
+  <img src="virtual machins in azure.png" alt="Azure VM Creation Screenshot" width="80%">
+</p>
+
+Make sure both VMs are in the **same virtual network** so they can communicate.
+
+---
+
+## **2. Connect to the Windows VM and Install Wireshark**
+
+1. Use **Remote Desktop** to log into the Windows VM.  
+2. Download Wireshark from: https://www.wireshark.org  
+3. Install it with default settings.
+
+<p align="center">
+  <img src="windows VM wireshark.png" alt="Wireshark Installation Screenshot" width="80%">
+</p>
+
+---
+
+## **3. Start Capturing Traffic in Wireshark**
+
+1. Open **Wireshark**.  
+2. Select your main network adapter.  
+3. Click **Start Capture**.
+
+You will immediately see background traffic such as **DNS** and **ARP**.
+
+<p align="center">
+  <img src="Traffic in wireshark.png" alt="Wireshark Capture Screenshot" width="80%">
+</p>
+
+---
+
+## **4. Test Connectivity Between the VMs**
+
+### **Ping the Linux VM from Windows**
+
+<p align="center">
+  <img src="Testconnection.png" alt="Ping and Wireshark Screenshot" width="80%">
+</p>
+
+1. Open **Command Prompt** on the Windows VM.  
+2. Type the following command, replacing `<Linux-VM-private-IP>` with your Linux VM’s private IP address:
+
