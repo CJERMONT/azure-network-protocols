@@ -156,14 +156,5 @@ You will create:
 
 ---
 
-# 🧹 Part 5 — Lab Cleanup
-
-### ✔️ Steps
-- Close your RDP session  
-- Go to Azure Portal  
-- Delete the **Resource Group** you created  
-- Confirm deletion is complete  
-
----
 
 
