@@ -1,57 +1,91 @@
 <p align="center">
-<img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination"/>
+  <img src="https://i.imgur.com/Ua7udoS.png" alt="Traffic Examination" width="70%">
 </p>
 
-<h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this tutorial, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+# Network Security Groups (NSGs) and Watching Traffic Between Azure Virtual Machines  
+*A beginner‑friendly walkthrough with screenshots*
 
+This guide shows you how to watch network traffic between Azure Virtual Machines using **Wireshark**, and how **Network Security Groups (NSGs)** affect what traffic is allowed or blocked.
 
-<h2>Video Demonstration</h2>
+---
 
-- ### [YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups](https://www.youtube.com)
+## 📺 Video Demonstration
+- **YouTube: Azure Virtual Machines, Wireshark, and Network Security Groups**  
+  *(Insert your link here)*
 
-<h2>Environments and Technologies Used</h2>
+---
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
-- Wireshark (Protocol Analyzer)
+## 🧰 Tools and Technologies Used
+- Microsoft Azure (Virtual Machines)
+- Remote Desktop (RDP)
+- Command‑line tools (PowerShell, Bash)
+- Network protocols: ICMP (ping), SSH, RDP, DNS, HTTP/HTTPS
+- Wireshark (packet analyzer)
 
-<h2>Operating Systems Used </h2>
+---
 
-- Windows 10 (21H2)
+## 🖥 Operating Systems Used
+- Windows 10  
 - Ubuntu Server 20.04
 
-<h2>High-Level Steps</h2>
+---
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+# 🧭 High‑Level Steps (Beginner Friendly)
 
-<h2>Actions and Observations</h2>
+1. **Create two virtual machines** in Azure (one Windows, one Linux).
+2. **Install Wireshark** on the Windows VM.
+3. **Generate traffic** between the VMs (ping, SSH, web browsing).
+4. **Change NSG rules** and watch how traffic changes in Wireshark.
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+---
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+# 📸 Step‑by‑Step With Screenshot Placeholders
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+---
+
+## **1. Create Two Virtual Machines in Azure**
+
+You will create:
+- **Windows 10 VM** (for Wireshark)
+- **Ubuntu VM** (for testing SSH and ping)
+
+<p align="center">
+  <img src="ADD-YOUR-SCREENSHOT-HERE" alt="Azure VM Creation Screenshot" width="80%">
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
+Make sure both VMs are in the **same virtual network** so they can communicate.
+
+---
+
+## **2. Connect to the Windows VM and Install Wireshark**
+
+1. Use **Remote Desktop** to log into the Windows VM.
+2. Download Wireshark from: https://www.wireshark.org
+3. Install it with default settings.
+
+<p align="center">
+  <img src="ADD-YOUR-SCREENSHOT-HERE" alt="Wireshark Installation Screenshot" width="80%">
 </p>
-<br />
+
+---
+
+## **3. Start Capturing Traffic in Wireshark**
+
+1. Open Wireshark.
+2. Select your main network adapter.
+3. Click **Start Capture**.
+
+You will immediately see background traffic such as DNS and ARP.
+
+<p align="center">
+  <img src="ADD-YOUR-SCREENSHOT-HERE" alt="Wireshark Capture Screenshot" width="80%">
+</p>
+
+---
+
+## **4. Test Connectivity Between the VMs**
+
+### **Ping the Linux VM from Windows**
+
+1. Open **Command Prompt**.
+2. Type:  
