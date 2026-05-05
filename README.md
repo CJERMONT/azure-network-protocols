@@ -5,7 +5,25 @@
 # Network Security Groups (NSGs) and Watching Traffic Between Azure Virtual Machines  
 *A beginner‑friendly walkthrough with screenshots*
 
-This guide shows you how to watch network traffic between Azure Virtual Machines using **Wireshark**, and how **Network Security Groups (NSGs)** affect what traffic is allowed or blocked.
+## 📝 Project Summary
+
+This project demonstrates how to analyze network traffic between Azure Virtual Machines using **Wireshark**, and how **Network Security Groups (NSGs)** control which traffic is allowed or blocked. The walkthrough includes creating Azure VMs, generating traffic using common protocols (ICMP, SSH, DNS, DHCP, RDP), and observing how NSG rule changes affect connectivity.
+
+**Languages Used:**  
+- PowerShell  
+- Bash  
+
+**Environments Used:**  
+- Microsoft Azure  
+- Windows 10 Virtual Machine  
+- Ubuntu Server 20.04 Virtual Machine  
+
+**Technologies / Applications / Services Used:**  
+- Network Security Groups (NSGs)  
+- Wireshark  
+- Remote Desktop (RDP)  
+- SSH  
+- Azure Virtual Machines  
 
 ---
 
@@ -47,6 +65,7 @@ You will create:
 <p align="center">
   <img src="virtual machins in azure.png" alt="Azure VM Creation Screenshot" width="80%">
 </p>
+
 ---
 
 # 🟩 Part 2 — Observe ICMP (Ping) Traffic
@@ -152,9 +171,3 @@ You will create:
 2. Watch nonstop RDP traffic appear  
 - RDP constantly streams your desktop  
 - So traffic never stops, even when idle
-
-
----
-
-
-
